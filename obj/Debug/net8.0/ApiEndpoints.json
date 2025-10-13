@@ -1,0 +1,464 @@
+[
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_0",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.CitiesController",
+    "Method": "GetAll",
+    "RelativePath": "api/cities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[L1_Zvejyba.Data.DTOs.Cities.CityDTO, L1_Zvejyba, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.CitiesController",
+    "Method": "Post",
+    "RelativePath": "api/cities",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityDTO",
+        "Type": "L1_Zvejyba.Data.DTOs.Cities.CreateCityDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Zvejyba.Data.DTOs.Cities.CityDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.BodiesController",
+    "Method": "GetAllBodies",
+    "RelativePath": "api/cities/{cityName}/bodies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[L1_Zvejyba.Data.DTOs.Bodies.BodyDTO, L1_Zvejyba, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.BodiesController",
+    "Method": "Post",
+    "RelativePath": "api/cities/{cityName}/bodies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "bodyDTO",
+        "Type": "L1_Zvejyba.Data.DTOs.Bodies.CreateBodyDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Zvejyba.Data.DTOs.Bodies.BodyDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.BodiesController",
+    "Method": "Put",
+    "RelativePath": "api/cities/{cityName}/bodies/{bodyDTO.Name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "bodyDTO",
+        "Type": "L1_Zvejyba.Data.DTOs.Bodies.UpdateBodyDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "bodyDTO.Name",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Zvejyba.Data.DTOs.Bodies.BodyDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.BodiesController",
+    "Method": "GetBody",
+    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "bodyName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Zvejyba.Data.DTOs.Bodies.BodyDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.BodiesController",
+    "Method": "Delete",
+    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "bodyName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.FishController",
+    "Method": "GetAllFish",
+    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}/fish",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "bodyName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[L1_Zvejyba.Data.DTOs.Fish.FishDTO, L1_Zvejyba, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.FishController",
+    "Method": "Post",
+    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}/fish",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "bodyName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "fishDTO",
+        "Type": "L1_Zvejyba.Data.DTOs.Fish.CreateFishDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Zvejyba.Data.DTOs.Fish.FishDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.FishController",
+    "Method": "Put",
+    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}/fish/{fishDTO.Id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "bodyName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "fishDTO",
+        "Type": "L1_Zvejyba.Data.DTOs.Fish.UpdateFishDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "fishDTO.Id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Zvejyba.Data.DTOs.Fish.FishDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.FishController",
+    "Method": "GetFish",
+    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}/fish/{fishId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "bodyName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "fishId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Zvejyba.Data.DTOs.Fish.FishDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.FishController",
+    "Method": "Delete",
+    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}/fish/{fishId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "bodyName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "fishId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.CitiesController",
+    "Method": "Get",
+    "RelativePath": "api/cities/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Zvejyba.Data.DTOs.Cities.CityDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.CitiesController",
+    "Method": "Put",
+    "RelativePath": "api/cities/{name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cityDTO",
+        "Type": "L1_Zvejyba.Data.DTOs.Cities.UpdateCityDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Zvejyba.Data.DTOs.Cities.CityDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Controllers.CitiesController",
+    "Method": "Delete",
+    "RelativePath": "api/cities/{name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Zvejyba.Data.DTOs.Cities.CityDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
