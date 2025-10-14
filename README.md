@@ -4,7 +4,7 @@ TLDR:
 cities
 /api/cities GET ALL 200
 /api/cities/{name} GET 200, 404
-/api/cities POST 200
+/api/cities POST 200, 400
 /api/cities/{name} PUT 200
 /api/cities/{name} DELETE 200, 404
 bodies
