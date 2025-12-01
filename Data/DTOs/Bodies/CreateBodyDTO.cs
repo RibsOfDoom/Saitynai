@@ -1,4 +1,4 @@
 ﻿namespace L1_Zvejyba.Data.DTOs.Bodies
 {
-    public record CreateBodyDTO(string Name, string Description);
+    public record CreateBodyDTO(int Id, string Name, string Description);
 }

@@ -6,8 +6,8 @@ namespace L1_Zvejyba.Data.Repositories
     public interface IFishRepository
     {
         Task Add(Fish fish);
-        Task<Fish> Get(string cityName, string bodyName, int fishId);
-        Task<IEnumerable<Fish>> GetAll(string cityName, string bodyName);
+        Task<Fish> Get(int cityId, int bodyId, int fishId);
+        Task<IEnumerable<Fish>> GetAll(int cityId, int bodyId);
         Task Remove(Fish fish);
         Task Update(Fish fish);
     }
@@ -23,14 +23,14 @@ namespace L1_Zvejyba.Data.Repositories
 
 
 
-        public async Task<Fish> Get(string cityName, string bodyName, int fishId)
+        public async Task<Fish> Get(int cityId, int bodyId, int fishId)
         {
             return await _demoRestContext.Fish.Where(o => o.Id == fishId).FirstOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<Fish>> GetAll(string cityName, string bodyName)
+        public async Task<IEnumerable<Fish>> GetAll(int cityId, int bodyId)
         {
-            return await _demoRestContext.Fish.Where(o => o.body.Name == bodyName).ToListAsync();
+            return await _demoRestContext.Fish.Where(o => o.body.Id == bodyId).ToListAsync();
         }
 
         public async Task Add(Fish fish)

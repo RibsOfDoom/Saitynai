@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using L1_Zvejyba.Data.Auth.Model;
+using System.ComponentModel.DataAnnotations;
 
 namespace L1_Zvejyba.Data.Entities
 {
@@ -22,6 +23,15 @@ namespace L1_Zvejyba.Data.Entities
         public int TimeTo { get; set; }
 
         public Body body { get; set; }
-        public string bodyName { get; set; }
+        //public string bodyName { get; set; }
+
+        public int bodyId { get; set; }
+
+        [Required]
+        public required string UserId { get; set; }
+
+        public User SiteUser { get; set; }
+
+        public string lastModifiedBy { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_0",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
     "RelativePath": "",
     "HttpMethod": "GET",
     "IsController": false,
@@ -13,6 +13,44 @@
         "MediaTypes": [
           "text/plain"
         ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Data.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003C_AddAuthApi\u003Eb__0_2",
+    "RelativePath": "api/accessToken",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Data.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003C_AddAuthApi\u003Eb__0_0",
+    "RelativePath": "api/accounts",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "L1_Zvejyba.Data.Auth.AuthEndpoints\u002BRegisterUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]
@@ -66,14 +104,14 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.BodiesController",
     "Method": "GetAllBodies",
-    "RelativePath": "api/cities/{cityName}/bodies",
+    "RelativePath": "api/cities/{cityId}/bodies",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cityName",
-        "Type": "System.String",
+        "Name": "cityId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -92,14 +130,14 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.BodiesController",
     "Method": "Post",
-    "RelativePath": "api/cities/{cityName}/bodies",
+    "RelativePath": "api/cities/{cityId}/bodies",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cityName",
-        "Type": "System.String",
+        "Name": "cityId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
@@ -123,14 +161,14 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.BodiesController",
     "Method": "Put",
-    "RelativePath": "api/cities/{cityName}/bodies/{bodyDTO.Name}",
+    "RelativePath": "api/cities/{cityId}/bodies/{bodyDTO.Id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cityName",
-        "Type": "System.String",
+        "Name": "cityId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
@@ -139,7 +177,7 @@
         "IsRequired": true
       },
       {
-        "Name": "bodyDTO.Name",
+        "Name": "bodyDTO.Id",
         "Type": "",
         "IsRequired": true
       }
@@ -159,19 +197,19 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.BodiesController",
     "Method": "GetBody",
-    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}",
+    "RelativePath": "api/cities/{cityId}/bodies/{bodyId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cityName",
-        "Type": "System.String",
+        "Name": "cityId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "bodyName",
-        "Type": "System.String",
+        "Name": "bodyId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -190,19 +228,19 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.BodiesController",
     "Method": "Delete",
-    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}",
+    "RelativePath": "api/cities/{cityId}/bodies/{bodyId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cityName",
-        "Type": "System.String",
+        "Name": "cityId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "bodyName",
-        "Type": "System.String",
+        "Name": "bodyId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -211,19 +249,19 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.FishController",
     "Method": "GetAllFish",
-    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}/fish",
+    "RelativePath": "api/cities/{cityId}/bodies/{bodyId}/fish",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cityName",
-        "Type": "System.String",
+        "Name": "cityId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "bodyName",
-        "Type": "System.String",
+        "Name": "bodyId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -242,19 +280,19 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.FishController",
     "Method": "Post",
-    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}/fish",
+    "RelativePath": "api/cities/{cityId}/bodies/{bodyId}/fish",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cityName",
-        "Type": "System.String",
+        "Name": "cityId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "bodyName",
-        "Type": "System.String",
+        "Name": "bodyId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
@@ -278,19 +316,19 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.FishController",
     "Method": "Put",
-    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}/fish/{fishDTO.Id}",
+    "RelativePath": "api/cities/{cityId}/bodies/{bodyId}/fish/{fishDTO.Id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cityName",
-        "Type": "System.String",
+        "Name": "cityId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "bodyName",
-        "Type": "System.String",
+        "Name": "bodyId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
@@ -319,19 +357,19 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.FishController",
     "Method": "GetFish",
-    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}/fish/{fishId}",
+    "RelativePath": "api/cities/{cityId}/bodies/{bodyId}/fish/{fishId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cityName",
-        "Type": "System.String",
+        "Name": "cityId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "bodyName",
-        "Type": "System.String",
+        "Name": "bodyId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
@@ -355,19 +393,19 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.FishController",
     "Method": "Delete",
-    "RelativePath": "api/cities/{cityName}/bodies/{bodyName}/fish/{fishId}",
+    "RelativePath": "api/cities/{cityId}/bodies/{bodyId}/fish/{fishId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cityName",
-        "Type": "System.String",
+        "Name": "cityId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "bodyName",
-        "Type": "System.String",
+        "Name": "bodyId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
@@ -381,14 +419,14 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.CitiesController",
     "Method": "Get",
-    "RelativePath": "api/cities/{name}",
+    "RelativePath": "api/cities/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "name",
-        "Type": "System.String",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -407,14 +445,14 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.CitiesController",
     "Method": "Put",
-    "RelativePath": "api/cities/{name}",
+    "RelativePath": "api/cities/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "name",
-        "Type": "System.String",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
@@ -438,14 +476,14 @@
   {
     "ContainingType": "L1_Zvejyba.Controllers.CitiesController",
     "Method": "Delete",
-    "RelativePath": "api/cities/{name}",
+    "RelativePath": "api/cities/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "name",
-        "Type": "System.String",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -457,6 +495,44 @@
           "application/json",
           "text/json"
         ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Data.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003C_AddAuthApi\u003Eb__0_1",
+    "RelativePath": "api/login",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "L1_Zvejyba.Data.Auth.AuthEndpoints\u002BLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Zvejyba.Data.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003C_AddAuthApi\u003Eb__0_3",
+    "RelativePath": "api/logout",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]

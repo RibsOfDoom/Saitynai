@@ -1,4 +1,4 @@
 ﻿namespace L1_Zvejyba.Data.DTOs.Cities
 {
-        public record CityDTO(string name, string description);
+        public record CityDTO(int Id, string name, string description);
 }

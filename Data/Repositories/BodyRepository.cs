@@ -5,8 +5,8 @@ namespace L1_Zvejyba.Data.Repositories
     public interface IBodyRepository
     {
         Task Add(Body body);
-        Task<Body> Get(string cityName, string bodyName);
-        Task<IEnumerable<Body>> GetAll(string cityName);
+        Task<Body> Get(int id, int bodyId);
+        Task<IEnumerable<Body>> GetAll(int id);
         Task Remove(Body body);
         Task Update(Body body);
     }
@@ -22,14 +22,14 @@ namespace L1_Zvejyba.Data.Repositories
 
 
 
-        public async Task<Body> Get(string cityName, string bodyName)
+        public async Task<Body> Get(int id, int bodyId)
         {
-            return await _demoRestContext.Bodies.FirstOrDefaultAsync(o => o.city.Name == cityName && o.Name == bodyName);
+            return await _demoRestContext.Bodies.FirstOrDefaultAsync(o => o.city.Id == id && o.Id == bodyId);
         }
 
-        public async Task<IEnumerable<Body>> GetAll(string cityName)
+        public async Task<IEnumerable<Body>> GetAll(int id)
         {
-            return await _demoRestContext.Bodies.Where(o => o.city.Name == cityName).ToListAsync();
+            return await _demoRestContext.Bodies.Where(o => o.city.Id == id).ToListAsync();
         }
 
         public async Task Add(Body body)

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace L1_Zvejyba.Migrations
 {
     [DbContext(typeof(DemoRestContext))]
-    [Migration("20251013184739_fishfinally")]
-    partial class fishfinally
+    [Migration("20251014105731_kkkkkk")]
+    partial class kkkkkk
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

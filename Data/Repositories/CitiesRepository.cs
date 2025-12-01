@@ -8,7 +8,7 @@ namespace L1_Zvejyba.Data.Repositories
     {
         Task<City> Create(City city);
         Task Delete(City city);
-        Task<City> Get(string name);
+        Task<City> Get(int id);
         Task<IEnumerable<City>> GetAll();
         Task<City> Put(City city);
     }
@@ -26,9 +26,9 @@ namespace L1_Zvejyba.Data.Repositories
             return await _demoRestContext.Cities.ToListAsync();
         }
 
-        public async Task<City> Get(string name)
+        public async Task<City> Get(int id)
         {
-            return await _demoRestContext.Cities.Where(o => o.Name == name).FirstOrDefaultAsync();
+            return await _demoRestContext.Cities.Where(o => o.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task<City> Put(City city)

@@ -1,10 +1,15 @@
-﻿using L1_Zvejyba.Data.Repositories;
-using L1_Zvejyba.Data.Entities;
-using Microsoft.AspNetCore.Mvc;
-using AutoMapper;
-using Microsoft.AspNetCore.Mvc.Formatters;
-using L1_Zvejyba.Data.DTOs.Cities;
+﻿using AutoMapper;
+using L1_Zvejyba.Data.Auth.Model;
 using L1_Zvejyba.Data.DTOs.Bodies;
+using L1_Zvejyba.Data.DTOs.Cities;
+using L1_Zvejyba.Data.Entities;
+using L1_Zvejyba.Data.Repositories;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
+using System.Diagnostics.Metrics;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace L1_Zvejyba.Controllers
 {
@@ -30,48 +35,95 @@ namespace L1_Zvejyba.Controllers
 
         [HttpGet]
         public async Task<IEnumerable<CityDTO>> GetAll()
-        {
+        { 
             return (await _citiesRepository.GetAll()).Select(o => _mapper.Map<CityDTO>(o));
         }
 
-        [HttpGet("{name}")]
-        public async Task<ActionResult<CityDTO>> Get(string name)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<CityDTO>> Get(int id)
         {
-            var city = await _citiesRepository.Get(name);
-            if (city == null) return NotFound($"City by the name of {name} was not found.");
+            var city = await _citiesRepository.Get(id);
+            if (city == null) return NotFound($"City by the id of {id} was not found.");
 
             return Ok(_mapper.Map<CityDTO>(city));
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<ActionResult<CityDTO>> Post(CreateCityDTO cityDTO)
         {
             var city = _mapper.Map<City>(cityDTO);
 
+            var userId = User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+            if (userId == null) return Unauthorized();
+
+            var roles = HttpContext.User.Claims
+                .Where(c => c.Type == ClaimTypes.Role)
+                .Select(c => c.Value);
+
+            if (!roles.Contains("Admin"))
+            {
+                return Forbid("You don’t have permission to perform this action.");
+            }
+
+            city.UserId = userId;
+
+
+            var existingCity = await _citiesRepository.Get(cityDTO.Id);
+            if (existingCity != null)
+                return BadRequest($"A city named '{cityDTO.Name}' already exists.");
+
             await _citiesRepository.Create(city);
 
             /// 201 Created City
-            return Created($"/api/cities/{city.Name}", _mapper.Map<CityDTO>(city));
+            return Created($"/api/cities/{city.Id}", _mapper.Map<CityDTO>(city));
         }
 
-        [HttpPut("{name}")]
-        public async Task<ActionResult<CityDTO>> Put(string name, UpdateCityDTO cityDTO)
+        [Authorize(Roles = "Admin")]
+        [HttpPut("{id}")]
+        public async Task<ActionResult<CityDTO>> Put(int id, UpdateCityDTO cityDTO)
         {
-            var city = await _citiesRepository.Get(name);
-            if (city == null) return NotFound($"City by the name of {name} was not found.");
+            var city = await _citiesRepository.Get(id);
+            if (city == null) return NotFound($"City by the id of {id} was not found.");
 
             city.Description = cityDTO.Description;
+
+            var userId = User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+            if (userId == null) return Unauthorized();
+            city.lastModifiedBy = userId;
+
+            var roles = HttpContext.User.Claims
+                .Where(c => c.Type == ClaimTypes.Role)
+                .Select(c => c.Value);
+
+            if (!roles.Contains("Admin"))
+            {
+                return Forbid("You don’t have permission to perform this action.");
+            }
 
             await _citiesRepository.Put(city);
 
             return Ok(_mapper.Map<CityDTO>(city));
         }
 
-        [HttpDelete("{name}")]
-        public async Task<ActionResult<CityDTO>> Delete(string name)
+        [Authorize(Roles = "Admin")]
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<CityDTO>> Delete(int id)
         {
-            var city = await _citiesRepository.Get(name);
-            if (city == null) return NotFound($"City by the name of {name} was not found.");
+            var userId = User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+            if (userId == null) return Unauthorized();
+
+            var roles = HttpContext.User.Claims
+                .Where(c => c.Type == ClaimTypes.Role)
+                .Select(c => c.Value);
+
+            if (!roles.Contains("Admin"))
+            {
+                return Forbid("You don’t have permission to perform this action.");
+            }
+
+            var city = await _citiesRepository.Get(id);
+            if (city == null) return NotFound($"City by the name of {id} was not found.");
 
             await _citiesRepository.Delete(city);
 
