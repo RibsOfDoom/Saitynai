@@ -88,6 +88,10 @@
               "target": "Package",
               "version": "[9.0.9, )"
             },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "SharpGrip.FluentValidation.AutoValidation.Endpoints": {
               "target": "Package",
               "version": "[1.5.0, )"

@@ -18,7 +18,11 @@ builder.Services.AddTransient<IBodyRepository, BodyRepository>();
 
 builder.Services.AddTransient<IFishRepository, FishRepository>();
 
-builder.Services.AddDbContext<DemoRestContext>();
+//builder.Services.AddDbContext<DemoRestContext>();
+
+builder.Services.AddDbContext<DemoRestContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSQL")));
+
 
 builder.Services.AddAutoMapper(typeof(Program));
 

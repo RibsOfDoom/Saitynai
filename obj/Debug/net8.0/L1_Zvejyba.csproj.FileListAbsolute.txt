@@ -357,3 +357,5 @@ C:\Users\PC\OneDrive - Kaunas University of Technology\4 Metai\Saitynai\L1\L1_Zv
 C:\Users\PC\OneDrive - Kaunas University of Technology\4 Metai\Saitynai\L1\L1_Zvejyba\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\PC\OneDrive - Kaunas University of Technology\4 Metai\Saitynai\L1\L1_Zvejyba\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 C:\Users\PC\OneDrive - Kaunas University of Technology\4 Metai\Saitynai\L1\L1_Zvejyba\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\PC\OneDrive - Kaunas University of Technology\4 Metai\Saitynai\L1\L1_Zvejyba\bin\Debug\net8.0\Npgsql.dll
+C:\Users\PC\OneDrive - Kaunas University of Technology\4 Metai\Saitynai\L1\L1_Zvejyba\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

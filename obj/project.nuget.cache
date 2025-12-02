@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DB/8atQZvh0=",
+  "dgSpecHash": "EMY1ZTv5Hdw=",
   "success": true,
   "projectFilePath": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\L1_Zvejyba.csproj",
   "expectedPackageFiles": [
@@ -78,6 +78,8 @@
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\npgsql\\8.0.6\\npgsql.8.0.6.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.11\\npgsql.entityframeworkcore.postgresql.8.0.11.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\sharpgrip.fluentvalidation.autovalidation.endpoints\\1.5.0\\sharpgrip.fluentvalidation.autovalidation.endpoints.1.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\sharpgrip.fluentvalidation.autovalidation.shared\\1.5.0\\sharpgrip.fluentvalidation.autovalidation.shared.1.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
