@@ -3,6 +3,7 @@ using System;
 using L1_Zvejyba.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace L1_Zvejyba.Migrations
 {
     [DbContext(typeof(DemoRestContext))]
-    partial class DemoRestContextModelSnapshot : ModelSnapshot
+    [Migration("20251202015613_OptionalModify")]
+    partial class OptionalModify
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

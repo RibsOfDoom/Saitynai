@@ -19,6 +19,6 @@ namespace L1_Zvejyba.Data.Entities
 
         public User SiteUser { get; set; }
 
-        public string lastModifiedBy { get; set; }
+        public string? lastModifiedBy { get; set; }
     }
 }
