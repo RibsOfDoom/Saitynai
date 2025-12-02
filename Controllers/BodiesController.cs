@@ -75,14 +75,14 @@ namespace L1_Zvejyba.Controllers
         }
 
         [Authorize(Roles = "User")]
-        [HttpPut("{bodyDTO.Id}")]
-        public async Task<ActionResult<BodyDTO>> Put(int cityId, UpdateBodyDTO bodyDTO)
+        [HttpPut("{bodyId}")]
+        public async Task<ActionResult<BodyDTO>> Put(int cityId, int bodyId, UpdateBodyDTO bodyDTO)
         {
             var city = await _cityRepository.Get(cityId);
 
             if (city == null) return NotFound("Bad cityID");
 
-            var oldBody = await _bodyRepository.Get(cityId, bodyDTO.Id);
+            var oldBody = await _bodyRepository.Get(cityId, bodyId);
 
             if (oldBody == null) return NotFound("Bad bodyId");
 

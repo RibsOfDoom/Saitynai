@@ -80,8 +80,8 @@ namespace L1_Zvejyba.Controllers
         }
 
         [Authorize(Roles = "User")]
-        [HttpPut("{fishDTO.Id}")]
-        public async Task<ActionResult<FishDTO>> Put(int cityId, int bodyId, UpdateFishDTO fishDTO)
+        [HttpPut("{fishId}")]
+        public async Task<ActionResult<FishDTO>> Put(int cityId, int bodyId, int fishId, UpdateFishDTO fishDTO)
         {
             var city = await _cityRepository.Get(cityId);
 
@@ -91,7 +91,7 @@ namespace L1_Zvejyba.Controllers
 
             if (body == null) return NotFound();
 
-            var oldFish = await _fishRepository.Get(cityId, bodyId, fishDTO.Id);
+            var oldFish = await _fishRepository.Get(cityId, bodyId, fishId);
 
             if (oldFish == null) return NotFound();
 
