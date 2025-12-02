@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\data\\demorestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:data\\demorestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -83,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:data\\demorestprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\data\\demorestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:data\\demorestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\data\\helpers\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:data\\helpers\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -106,11 +106,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -118,8 +118,7 @@
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-01T23:08:28.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T23:08:28.09Z"
             },
             {
               "$type": "Document",
@@ -131,12 +130,11 @@
               "RelativeToolTip": "Migrations\\20251201223653_lastModifiedBy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:36:53.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:36:53.662Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Body.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Entities\\Body.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\Body.cs",
@@ -144,12 +142,11 @@
               "RelativeToolTip": "Data\\Entities\\Body.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:36:18.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:36:18.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "BodiesController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Controllers\\BodiesController.cs",
               "RelativeDocumentMoniker": "Controllers\\BodiesController.cs",
@@ -157,12 +154,11 @@
               "RelativeToolTip": "Controllers\\BodiesController.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAAgwHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:35:14.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:35:14.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FishController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Controllers\\FishController.cs",
               "RelativeDocumentMoniker": "Controllers\\FishController.cs",
@@ -170,12 +166,11 @@
               "RelativeToolTip": "Controllers\\FishController.cs",
               "ViewState": "AgIAAGIAAAAAAAAAAAAuwHUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:32:08.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:32:08.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CitiesRepository.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Repositories\\CitiesRepository.cs",
               "RelativeDocumentMoniker": "Data\\Repositories\\CitiesRepository.cs",
@@ -183,12 +178,11 @@
               "RelativeToolTip": "Data\\Repositories\\CitiesRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:26:29.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:26:29.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BodyRepository.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Repositories\\BodyRepository.cs",
               "RelativeDocumentMoniker": "Data\\Repositories\\BodyRepository.cs",
@@ -196,12 +190,11 @@
               "RelativeToolTip": "Data\\Repositories\\BodyRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:05:16.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:05:16.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UserRoles.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Auth\\Model\\UserRoles.cs",
               "RelativeDocumentMoniker": "Data\\Auth\\Model\\UserRoles.cs",
@@ -209,12 +202,11 @@
               "RelativeToolTip": "Data\\Auth\\Model\\UserRoles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T21:44:29.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T21:44:29.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Auth\\Model\\User.cs",
               "RelativeDocumentMoniker": "Data\\Auth\\Model\\User.cs",
@@ -222,12 +214,11 @@
               "RelativeToolTip": "Data\\Auth\\Model\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T21:44:29.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T21:44:29.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "City.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Entities\\City.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\City.cs",
@@ -235,12 +226,11 @@
               "RelativeToolTip": "Data\\Entities\\City.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T21:26:08.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T21:26:08.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "CreateCityDTO.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\DTOs\\Cities\\CreateCityDTO.cs",
               "RelativeDocumentMoniker": "Data\\DTOs\\Cities\\CreateCityDTO.cs",
@@ -248,12 +238,11 @@
               "RelativeToolTip": "Data\\DTOs\\Cities\\CreateCityDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T21:26:02.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T21:26:02.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CitiesController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Controllers\\CitiesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CitiesController.cs",
@@ -261,12 +250,11 @@
               "RelativeToolTip": "Controllers\\CitiesController.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAcwHoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T21:22:20.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T21:22:20.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "DemoRestProfile.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\DemoRestProfile.cs",
               "RelativeDocumentMoniker": "Data\\DemoRestProfile.cs",
@@ -274,12 +262,11 @@
               "RelativeToolTip": "Data\\DemoRestProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T21:22:06.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T21:22:06.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -287,8 +274,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-01T21:19:59.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T21:19:59.337Z"
             },
             {
               "$type": "Document",
@@ -300,12 +286,11 @@
               "RelativeToolTip": "Migrations\\20251201210602_sessions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T21:06:02.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T21:06:02.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -326,25 +311,24 @@
               "RelativeToolTip": "Data\\Helpers\\Extensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T20:39:54.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T20:39:54.045Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 0,
               "Title": "DemoRestContext.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\DemoRestContext.cs",
               "RelativeDocumentMoniker": "Data\\DemoRestContext.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\DemoRestContext.cs",
               "RelativeToolTip": "Data\\DemoRestContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T20:36:41.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "SessionService.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Auth\\SessionService.cs",
               "RelativeDocumentMoniker": "Data\\Auth\\SessionService.cs",
@@ -352,12 +336,11 @@
               "RelativeToolTip": "Data\\Auth\\SessionService.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAkwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T20:32:47.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T20:32:47.883Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Fish.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Entities\\Fish.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\Fish.cs",
@@ -365,12 +348,11 @@
               "RelativeToolTip": "Data\\Entities\\Fish.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwCIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T20:31:54.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T20:31:54.692Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Session.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Entities\\Session.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\Session.cs",
@@ -378,12 +360,11 @@
               "RelativeToolTip": "Data\\Entities\\Session.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T20:29:34.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T20:29:34.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AuthEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Auth\\AuthEndpoints.cs",
               "RelativeDocumentMoniker": "Data\\Auth\\AuthEndpoints.cs",
@@ -391,12 +372,11 @@
               "RelativeToolTip": "Data\\Auth\\AuthEndpoints.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAIBJwDcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T20:00:45.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T20:00:45.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Auth\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "Data\\Auth\\JwtTokenService.cs",
@@ -404,12 +384,11 @@
               "RelativeToolTip": "Data\\Auth\\JwtTokenService.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwDEAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T19:53:43.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T19:53:43.434Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AuthSeeder.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\Auth\\AuthSeeder.cs",
               "RelativeDocumentMoniker": "Data\\Auth\\AuthSeeder.cs",
@@ -417,8 +396,7 @@
               "RelativeToolTip": "Data\\Auth\\AuthSeeder.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T19:53:33.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T19:53:33.314Z"
             }
           ]
         }
