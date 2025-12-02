@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0@sha256:35792ea4ad1db051981f62b313f1be3b46b
 WORKDIR /App
 
 # Copy everything
-COPY C:\Users\PC\OneDrive - Kaunas University of Technology\4 Metai\Saitynai\L1\L1_Zvejyba
+COPY . ./
 # Restore as distinct layers
 RUN dotnet restore
 # Build and publish a release

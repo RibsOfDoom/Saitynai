@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\data\\demorestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:data\\demorestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\data\\demorestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:data\\demorestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\data\\repositories\\bodyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,14 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\data\\helpers\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:data\\helpers\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\migrations\\20251201223653_lastmodifiedby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:migrations\\20251201223653_lastmodifiedby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|c:\\users\\pc\\onedrive - kaunas university of technology\\4 metai\\saitynai\\l1\\l1_zvejyba\\migrations\\20251201210602_sessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F7617F2-7D23-48A6-B800-64CF0F3E578C}|L1_Zvejyba.csproj|solutionrelative:migrations\\20251201210602_sessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,31 +98,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
               "ToolTip": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Dockerfile",
               "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-01T23:08:28.09Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "20251201223653_lastModifiedBy.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Migrations\\20251201223653_lastModifiedBy.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251201223653_lastModifiedBy.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Migrations\\20251201223653_lastModifiedBy.cs",
-              "RelativeToolTip": "Migrations\\20251201223653_lastModifiedBy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:36:53.662Z"
+              "WhenOpened": "2025-12-01T23:08:28.09Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -266,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -278,25 +259,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "20251201210602_sessions.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Migrations\\20251201210602_sessions.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251201210602_sessions.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Migrations\\20251201210602_sessions.cs",
-              "RelativeToolTip": "Migrations\\20251201210602_sessions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T21:06:02.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAOB/wCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T21:02:39.633Z",
               "EditorCaption": ""
@@ -315,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DemoRestContext.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive - Kaunas University of Technology\\4 Metai\\Saitynai\\L1\\L1_Zvejyba\\Data\\DemoRestContext.cs",
               "RelativeDocumentMoniker": "Data\\DemoRestContext.cs",
