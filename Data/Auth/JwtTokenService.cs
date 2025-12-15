@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
+using L1_Zvejyba.Data.Entities;
 
 namespace L1_Zvejyba.Data.Auth
 {
@@ -85,7 +86,6 @@ namespace L1_Zvejyba.Data.Auth
                 return false;
             }
         }
-
 
     }
 }

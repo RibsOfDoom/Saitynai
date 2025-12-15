@@ -23,6 +23,13 @@ namespace L1_Zvejyba.Data.Repositories
 
 
 
+        /// <summary>
+        /// Doesnt check cityID rn, it should though, so does getall
+        /// </summary>
+        /// <param name="cityId"></param>
+        /// <param name="bodyId"></param>
+        /// <param name="fishId"></param>
+        /// <returns></returns>
         public async Task<Fish> Get(int cityId, int bodyId, int fishId)
         {
             return await _demoRestContext.Fish.Where(o => o.Id == fishId).FirstOrDefaultAsync();

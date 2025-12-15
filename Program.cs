@@ -53,6 +53,18 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddAuthorization();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReact",
+        policy =>
+        {
+            policy
+                .WithOrigins("http://localhost:5173")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
 var app = builder.Build();
 
 using var scope = app.Services.CreateScope();
@@ -74,6 +86,7 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
+app.UseCors("AllowReact");
 
 app.MapControllers();
 
