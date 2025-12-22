@@ -1,0 +1,440 @@
+openapi: 3.0.3
+info:
+  title: L1_Zvejyba API
+  version: 1.0.0
+  description: API for cities, bodies of water, fish, and authentication
+
+servers:
+  - url: https://localhost:5001
+
+security:
+  - bearerAuth: []
+
+paths:
+
+  /api/cities:
+    get:
+      summary: Get all cities
+      responses:
+        "200":
+          description: List of cities
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/City"
+
+    post:
+      summary: Create a city
+      security:
+        - bearerAuth: []
+      responses:
+        "201":
+          description: City created
+        "403":
+          description: Forbidden
+        "401":
+          description: Unauthorized
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateCity"
+
+  /api/cities/{id}:
+    get:
+      summary: Get city by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: City found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/City"
+        "404":
+          description: City not found
+
+    put:
+      summary: Update city
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateCity"
+      responses:
+        "200":
+          description: City updated
+        "403":
+          description: Forbidden
+
+    delete:
+      summary: Delete city
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: City deleted
+
+  /api/cities/{cityId}/bodies:
+    get:
+      summary: Get all bodies in a city
+      parameters:
+        - name: cityId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: List of bodies
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Body"
+
+    post:
+      summary: Create a body in a city
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: cityId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateBody"
+      responses:
+        "201":
+          description: Body created
+
+  /api/cities/{cityId}/bodies/{bodyId}:
+    get:
+      summary: Get body by ID
+      parameters:
+        - name: cityId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: bodyId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Body found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Body"
+        "404":
+          description: Not found
+
+    put:
+      summary: Update body
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: cityId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: bodyId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateBody"
+      responses:
+        "200":
+          description: Body updated
+
+    delete:
+      summary: Delete body
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: cityId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: bodyId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Body deleted
+
+  /api/cities/{cityId}/bodies/{bodyId}/fish:
+    get:
+      summary: Get all fish
+      parameters:
+        - name: cityId
+          in: path
+          required: true
+        - name: bodyId
+          in: path
+          required: true
+      responses:
+        "200":
+          description: List of fish
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Fish"
+
+    post:
+      summary: Create fish
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: cityId
+          in: path
+          required: true
+        - name: bodyId
+          in: path
+          required: true
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateFish"
+      responses:
+        "201":
+          description: Fish created
+
+  /api/cities/{cityId}/bodies/{bodyId}/fish/{fishId}:
+    get:
+      summary: Get fish by ID
+      parameters:
+        - name: cityId
+          in: path
+          required: true
+        - name: bodyId
+          in: path
+          required: true
+        - name: fishId
+          in: path
+          required: true
+      responses:
+        "200":
+          description: Fish found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Fish"
+
+    put:
+      summary: Update fish
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: cityId
+          in: path
+          required: true
+        - name: bodyId
+          in: path
+          required: true
+        - name: fishId
+          in: path
+          required: true
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateFish"
+      responses:
+        "200":
+          description: Fish updated
+
+    delete:
+      summary: Delete fish
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: cityId
+          in: path
+          required: true
+        - name: bodyId
+          in: path
+          required: true
+        - name: fishId
+          in: path
+          required: true
+      responses:
+        "204":
+          description: Fish deleted
+
+  /api/accounts:
+    post:
+      summary: Register user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegisterUser"
+      responses:
+        "201":
+          description: User registered
+
+  /api/login:
+    post:
+      summary: Login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Login"
+      responses:
+        "200":
+          description: Login successful
+
+  /api/accessToken:
+    post:
+      summary: Refresh access token
+      responses:
+        "200":
+          description: New access token issued
+
+  /api/logout:
+    post:
+      summary: Logout
+      responses:
+        "200":
+          description: Logged out
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    City:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        description:
+          type: string
+
+    CreateCity:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+
+    UpdateCity:
+      type: object
+      properties:
+        description:
+          type: string
+
+    Body:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+
+    CreateBody:
+      type: object
+      properties:
+        name:
+          type: string
+
+    UpdateBody:
+      type: object
+      properties:
+        name:
+          type: string
+
+    Fish:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+
+    CreateFish:
+      type: object
+      properties:
+        name:
+          type: string
+
+    UpdateFish:
+      type: object
+      properties:
+        name:
+          type: string
+
+    RegisterUser:
+      type: object
+      properties:
+        userName:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+
+    Login:
+      type: object
+      properties:
+        userName:
+          type: string
+        password:
+          type: string
