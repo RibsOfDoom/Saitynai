@@ -1,4 +1,5 @@
-
+Ataskaita, veikia tik prisijungus is KTU:
+https://ktuedu-my.sharepoint.com/:w:/g/personal/ignsto_ktu_lt/IQB27-wMBtq_SrzymuTP7c4DAWEpu7ZDDfb8Z4mheq_LMPk?e=hUvNIF
 TLDR:
 
 cities
